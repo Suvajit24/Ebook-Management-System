@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Raleway:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,400;0,700;1,500&family=Source+Sans+Pro&display=swap");
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+        font-family: Roboto;
+        font-size: 1em;
+      }
+      header {
+        width: 75vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #4f1f4a;
+        max-width: 1080px;
+        margin: auto;
+        margin-top: 3em;
+        margin-bottom: 2.3em;
+      }
+      .logo {
+        width: 5vw;
+        height: 5vh;
+      }
+      .nav-links li {
+        display: inline-block;
+        padding: 0px 1em;
+      }
+      .nav-links a,
+      .kycu,
+      .regjistrohu {
+        text-decoration: none;
+        color: #4f1f4a;
+      }
+      .cta {
+        margin-left: auto;
+      }
+      .regjistrohu {
+        background-color: #11d15f;
+        color: white;
+        padding: 0.5em 1em;
+        margin: 0em 2em;
+      }
+      .container {
+        width: 80vw;
+        margin: auto;
+        height: auto;
+        position: relative;
+      }
+      .right-box,
+      .left-box {
+        width: 48%;
+        height: 80vh;
+        display: inline-block;
+        margin: -2px;
+      }
+      .right-box {
+        background-color: #4f1f4a;
+        border-radius: 1em 0em 0em 1em;
+      }
+      .left-box {
+        border-radius: 0em 1em 1em 0em;
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .sign-up-box {
+        width: 25vw;
+        height: 75vh;
+        background-color: #fff;
+        position: absolute;
+        display: inline-block;
+        margin-top: -35em;
+        margin-left: 33em;
+        border-radius: 1em;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      .sign-up-box h1 {
+        font-size: 2rem;
+        color: #4f1f4a;
+        text-align: center;
+      }
+      input[type="email"],
+      input[type="password"],
+      input[type="text"] {
+        width: 80%;
+        padding: 1em;
+        display: block;
+        border-radius: 0.2em;
+        margin: auto;
+        margin-top: 1em;
+        border: 1px solid #ccc;
+        background-color: white;
+      }
+      .sign-up-box a {
+        width: 10vw;
+        height: auto;
+        padding: 0.5em;
+        background-color: #4f1f4a;
+        color: #f2e5d0;
+        border-radius: 0.6em;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        margin: 3em 7.5em;
+      }
+      .sign-up-box a:hover {
+        background-color: #532a4f;
+      }
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="password"]:focus {
+        outline: none;
+        box-shadow: 0 0 3px #4f1f4a;
+      }
+      footer {
+        margin-top: 4em;
+        display: flex;
+        color: #1e1e1e;
+        justify-content: space-between;
+        border-top: 2px solid #4f1f4a;
+      }
+      .logo-footer {
+        width: 5vw;
+        height: 5vh;
+        margin-top: 0.8em;
+      }
+      .info-kompania {
+        width: 20%;
+        line-height: 1.5;
+        overflow: hidden;
+      }
+      footer a {
+        display: block;
+        color: #1e1e1e;
+        text-decoration: none;
+      }
+      footer a:hover {
+        border-bottom: 1px solid #4f1f4a;
+        color: black;
+        transition: all 0.3s ease;
+      }
+      .kontakti-footer h1,
+      .social-media h1,
+      .nav-footer h1 {
+        text-transform: uppercase;
+      }
+      .social-media,
+      .nav-footer,
+      .kontakti-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .social-media {
+        align-items: center;
+      }
+      .social-media ion-icon {
+        font-size: 1.5em;
+      }
+      .kontakti-footer ion-icon {
+        font-size: 1.1em;
+      }
+      </style>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        if (error === 'email_exists') {
+           const errorMessage = document.getElementById('errorMessage');
+            errorMessage.innerHTML = 'Email already exists. Please use a different email address.';
+        }
+    });
+</script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("registrationForm");
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const firstName = document.getElementById("Name").value;
+      const lastName = document.getElementById("Mbiemri").value;
+      const email = document.getElementById("Email").value;
+      const password = document.getElementById("Pasword").value;
+      const cpass = document.getElementById("cpass").value;
+      const isEmailRegistered = false;
+      if (isEmailRegistered) {
+        alert("Email is already registered!");
+      } else {
+        const messageBox = document.getElementById("messageBox");
+        messageBox.innerHTML = `Registration successful, ${firstName}!`;
+        form.reset(); 
+      }
+    });
+  });
+</script>
+</head>
+<body>
+    <header>
+        <img
+          src="Fotografite\SVG\Book-Logo.svg"
+          alt="logo"
+          class="logo"
+        />
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.php">Home</a></li>
+          </ul>
+        </nav>
+        <div class="cta">
+          <a class="kycu" href="sign-up.html">Sign In</a>
+          <a class="regjistrohu" href="regjistrohu.html">Register</a>
+        </div>
+      </header>
+      <div class="container">
+        <div class="right-box"></div>
+      <div class="left-box"></div>
+      </div>
+      <div class="sign-up-box">
+        <h1>Register Now</h1>
+<form action="reg.php" method ="post">
+  <input type="text" name="Name" placeholder="First Name" required>
+  <input type="text" name="Mbiemri" placeholder="Last Name" required>
+  <input type="email" name="Email" placeholder="Email" required>
+  <input type="password" name="Pasword" placeholder="Password" required>
+  <input type="password" name="cpass" placeholder="Confirm Password" required>
+  <a><input type="submit" value="Register" name="submit"></a>
+</form>
+      </div>
+</body>
+</html>

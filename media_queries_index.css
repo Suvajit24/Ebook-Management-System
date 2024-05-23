@@ -1,0 +1,436 @@
+@media (max-width: 1400px) {
+  .container {
+    gap: 1em;
+    width: 85vw;
+  }
+  .header-section h1 {
+    margin-top: 2em;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 90vw;
+  }
+  .header-section h1 {
+    font-size: 2.7rem;
+    margin-top: 2em;
+  }
+  .header-section p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .authors,
+  .kategorite,
+  .bestseller-section,
+  .popular-books {
+    gap: 1em;
+  }
+  .btn-shiko-librat {
+    font-weight: 600;
+    padding: 0.4em 0.9em;
+  }
+  .btn-shiko-librat a {
+    font-size: 1.2rem;
+  }
+  .arrow {
+    width: 0.4em;
+    margin-left: 5px;
+  }
+  .bestseller,
+  .trend-book {
+    padding: 1em;
+  }
+  .sale-header {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  .header-section h1 {
+    font-size: 2.5rem;
+    margin-top: 2em;
+  }
+  .header-section p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .header-section {
+    height: 70vh;
+  }
+  .trend-book img,
+  .bestseller img {
+    width: 90%;
+  }
+  .authors,
+  .kategorite,
+  .bestseller-section,
+  .popular-books {
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: space-around;
+  }
+
+  .first-item,
+  .second-item,
+  .third-item,
+  .forth-item {
+    width: 15em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+    text-align: center;
+  }
+  .info-kompania,
+  .social-media,
+  .kontakti-footer,
+  .nav-footer {
+    text-align: left;
+  }
+  .fifth-item {
+    display: none;
+  }
+  .svg {
+    width: 33vw;
+    height: 40vh;
+    margin-left: 1em;
+  }
+  .sale {
+    height: 45vh;
+  }
+  .sale-header {
+    font-size: 1.5rem;
+    width: 60%;
+  }
+}
+@media (max-width: 840px) {
+  .header-section {
+    height: 60vh;
+  }
+  .header-section h1 {
+    font-size: 2rem;
+    margin-top: 2em;
+  }
+  .header-section p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .first-item,
+  .second-item,
+  .third-item,
+  .forth-item {
+    width: 13em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+  }
+  .trend-book img,
+  .bestseller img {
+    width: 80%;
+  }
+  .authors {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  .kategorite,
+  .bestseller-section,
+  .popular-books {
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  .svg {
+    width: 35vw;
+    height: 40vh;
+    margin-left: 1em;
+  }
+
+  .ne-trend,
+  .me-te-shitur,
+  .autoret-header,
+  .kategorite-header {
+    font-size: 1.6rem;
+    margin: 0.5em 0;
+  }
+  .regjistrohu {
+    padding: 0.5em 0.8em;
+    margin: 0em 1em;
+  }
+  .read-more {
+    padding: 0.4em 0.8em;
+    margin-top: 2em;
+  }
+  .nav-links li {
+    padding: 0px 0.3em;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+
+  /*****HAMBURGER MENU*****/
+
+  .hamburger {
+    display: block;
+  }
+  .bar {
+    width: 25px;
+    height: 3px;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5.5rem;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(50, 14, 45, 0.9);
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .nav-item {
+    margin: 14px 0;
+    color: white;
+  }
+  .nav-item a {
+    color: white;
+  }
+  .nav-menu.active {
+    left: 0;
+    padding: 0;
+  }
+  .logo {
+    width: 7vw;
+    height: 7vh;
+  }
+  .sale {
+    height: 40vh;
+  }
+  .sale-header {
+    font-size: 1.2rem;
+  }
+  .email {
+    font-size: 0.8em;
+  }
+  .email-subscribe input[type="email"] {
+    width: 18vw;
+    height: 4vh;
+  }
+  .subscribe-btn {
+    padding: 0.4em;
+  }
+  .btn-shiko-librat {
+    justify-self: center;
+    border-radius: 0.5em;
+    font-size: 1.3rem;
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 640px) {
+  .regjistrohu {
+    padding: 0.5em 0.8em;
+    margin: 0em 0.5em;
+  }
+  .nav-links li {
+    padding: 0.1em 0.3em;
+    display: block;
+  }
+  .logo {
+    width: 7vw;
+    height: 6vh;
+  }
+  .header-section {
+    height: 40vh;
+  }
+  .header-section h1 {
+    font-size: 1.6rem;
+    margin-top: 1em;
+  }
+  .header-section p {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .read-more {
+    padding: 0.4em 0.5em;
+    margin-top: 2em;
+    font-size: 0.8rem;
+  }
+  .ne-trend,
+  .me-te-shitur,
+  .autoret-header,
+  .kategorite-header {
+    font-size: 1.5rem;
+    margin: 0.5em 0;
+    width: 100%;
+    text-align: center;
+  }
+  .kategorite,
+  .bestseller-section,
+  .popular-books {
+    gap: 1em;
+  }
+  .first-item,
+  .second-item,
+  .third-item,
+  .forth-item {
+    width: 10em;
+    margin-top: 1em;
+    margin-left: 0.5em;
+  }
+  footer {
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .info-kompania {
+    width: 50%;
+  }
+  .email {
+    right: 6vw;
+    font-size: 0.7rem;
+    left: 10%;
+    top: 8em;
+  }
+  .svg {
+    width: 32vw;
+    height: 32vh;
+    margin-left: 1em;
+    font-size: 1.2em;
+  }
+  .sale {
+    background-image: url(Fotografite/Foto/sale-mobile.png);
+    height: 45vh;
+  }
+  .sale-header {
+    font-size: 1.1rem;
+    margin-top: 1em;
+    width: 90%;
+    text-align: center;
+  }
+  .email {
+    margin-top: 1em;
+    font-size: 0.8em;
+    justify-content: space-around;
+  }
+
+  .email-subscribe input[type="email"] {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 12vw;
+  }
+  .header-section {
+    background-image: none;
+    background-color: #f2e5d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .header-section h1 {
+    font-size: 1.5rem;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+  }
+  .header-section p {
+    font-size: 1rem;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+  }
+  .read-more {
+    padding: 0.8em 1em;
+    margin-top: 0.5em;
+  }
+  .author img {
+    height: 22vh;
+  }
+  .kategorite,
+  .bestseller-section,
+  .popular-books {
+    gap: 0.5em;
+  }
+  .first-item,
+  .second-item,
+  .third-item,
+  .forth-item {
+    width: 9em;
+    margin-top: 1em;
+  }
+  .svg {
+    width: 34vw;
+    height: 28vh;
+    font-size: 1em;
+  }
+  .logo {
+    width: 10vw;
+    height: 6vh;
+  }
+  .logo-footer {
+    width: 7vw;
+    height: 7vh;
+    margin-top: 0em;
+  }
+  .email {
+    font-size: 0.6rem;
+    top: 11em;
+  }
+  .sale-header {
+    font-size: 1rem;
+    margin-top: 1em;
+  }
+  .sale {
+    height: 50vh;
+  }
+}
+@media (max-width: 347px) {
+  .container {
+    width: 100%;
+  }
+  .logo {
+    width: 13vw;
+  }
+  .first-item,
+  .second-item,
+  .third-item,
+  .forth-item {
+    width: 13em;
+    margin-top: 3em;
+  }
+  .svg {
+    width: 13em;
+    height: 35vh;
+    font-size: 1.1em;
+  }
+  .ne-trend,
+  .me-te-shitur,
+  .autoret-header,
+  .kategorite-header {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5em 0;
+  }
+  .authors {
+    grid-template-columns: 1fr;
+  }
+  .author img {
+    height: 30vh;
+  }
+  footer .first-item,
+  footer .second-item,
+  footer .third-item,
+  footer .forth-item {
+    width: 10em;
+    margin-top: 0;
+  }
+}

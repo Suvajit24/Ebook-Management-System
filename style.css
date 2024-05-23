@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Raleway:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,400;0,700;1,500&family=Source+Sans+Pro&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 1em;
+}
+/*ngjyrat: #4f1f4a,  #11d15f, #f2e5d0*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto 10em auto 10em auto 5em 7em auto 7em auto auto auto;
+  gap: 1.1em;
+  width: 80vw;
+  margin: auto;
+  margin-top: 3em;
+}
+.navbar {
+  grid-column: 1/6;
+  min-height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  font-size: 1.1rem;
+}
+.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 1.5rem;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #4f1f4a;
+}
+
+.logo {
+  width: 5vw;
+  height: 5vh;
+}
+.nav-menu li {
+  display: inline-block;
+  padding: 0px 1em;
+}
+
+.nav-menu a,
+.kycu {
+  text-decoration: none;
+  color: #4f1f4a;
+  border-bottom: solid 2px transparent;
+}
+.nav-menu a:hover {
+  border-bottom: solid 2px #4f1f4a;
+}
+.kycu,
+.regjistrohu {
+  margin-left: auto;
+}
+.nav-menu .regjistrohu {
+  background-color: #11d15f;
+  color: white;
+  padding: 0.5em 1em;
+  border-bottom: none;
+}
+.nav-menu .regjistrohu:hover {
+  border-bottom: none;
+}
+.header-section {
+  background-image: url(Fotografite/Foto/Header.png);
+  border-radius: 0.3em;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  grid-column: 1/6;
+  grid-row: 2/3;
+  color: #4f1f4a;
+}
+.header-section h1 {
+  font-size: 3rem;
+  margin-top: 3em;
+  text-transform: uppercase;
+  width: 50%;
+}
+.header-section p {
+  font-size: 1rem;
+  font-weight: 700;
+  width: 50%;
+}
+img {
+  max-width: 100%;
+}
+.read-more {
+  padding: 0.8em 1em;
+  color: #4f1f4a;
+  border: 2px solid #4f1f4a;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1;
+}
+.read-more:hover {
+  background-color: #4f1f4a;
+  color: #f2e5d0;
+  transition: all 0.3s ease;
+}
+
+.ne-trend,
+.me-te-shitur,
+.autoret-header,
+.kategorite-header {
+  grid-column: 1/6;
+  font-size: 2rem;
+  align-self: flex-end;
+  margin: 0.5em 0;
+  color: #1e1e1e;
+}
+.trend-book {
+  background-color: #f2e5d0;
+}
+
+.bestseller,
+.trend-book {
+  border-radius: 0.5em;
+  width: 12em;
+  height: auto;
+  padding: 1.5em;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 5%);
+  display: flex;
+  flex-direction: column;
+}
+.bestseller:hover,
+.trend-book:hover {
+  transform: translateY(-0.8rem);
+  transition: all 0.3s ease;
+}
+.trend-book a {
+  text-decoration: none;
+  color: #1e1e1e;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 1em;
+}
+.trend-book a:hover {
+  color: #6e6d6d;
+}
+.bestseller {
+  background-color: #4f1f4a;
+  color: white;
+}
+.trend-book img,
+.bestseller img {
+  width: 8.75em;
+  display: inline-block;
+  align-self: center;
+}
+.btn-shiko-librat {
+  grid-column: 1/6;
+  background-color: #11d15f;
+  justify-self: flex-end;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5em;
+  align-self: flex-end;
+  padding: 0.5em 1em;
+}
+.btn-shiko-librat a {
+  text-decoration: none;
+  color: white;
+  margin-top: 0.3em;
+}
+.arrow {
+  width: 0.4em;
+  margin-left: 5px;
+}
+.authors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  grid-column: 1/6;
+  text-align: center;
+}
+.kategorite,
+.bestseller-section,
+.popular-books {
+  grid-column: 1/6;
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+.author img {
+  border-radius: 5em;
+  height: 25vh;
+  display: inline-block;
+}
+.author p {
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.svg {
+  box-shadow: 0px 1px 2px 1px rgb(200, 197, 197);
+  padding: 2em;
+  text-align: center;
+  width: 12em;
+  font-size: 1.5em;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.svg img {
+  width: 10vw;
+  height: 6vh;
+}
+.svg a {
+  margin-top: 4em;
+  text-decoration: none;
+  color: #1e1e1e;
+  display: inline-block;
+}
+.sale {
+  border-radius: 0.3em;
+  grid-column: 1/6;
+  margin-top: 5em;
+  position: relative;
+}
+.sale img {
+  width: 100%;
+  height: 60vh;
+}
+.email {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+}
+.sale {
+  background-image: url(Fotografite/Foto/Zbritje.png);
+  border-radius: 0.3em;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  grid-column: 1/6;
+  color: #4f1f4a;
+}
+.sale-header {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #4f1f4a;
+  position: absolute;
+  top: -5em;
+  font-size: 1.7rem;
+  color: #4f1f4a;
+}
+.email-subscribe{
+  display: flex;
+}
+.email-subscribe input[type="email"] {
+  width: 25vw;
+  padding: 1em 0.5em;
+  border-radius: 0.5em 0em 0em 0.5em;
+  background-color: #f2e5d0;
+  border: 1px solid #4f1f4a;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0 0 2px #4f1f4a;
+}
+
+.subscribe-btn {
+  background-color: #4f1f4a;
+  text-decoration: none;
+  border-radius: 0em 0.5em 0.5em 0em;
+  color: #f2e5d0;
+  padding: 1em 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  margin-top: 2em;
+  grid-column: 1/6;
+  display: flex;
+  color: #1e1e1e;
+  justify-content: space-between;
+  border-top: 2px solid #4f1f4a;
+}
+.logo-footer {
+  width: 5vw;
+  height: 5vh;
+  margin-top: 0.8em;
+}
+.info-kompania {
+  width: 20%;
+  line-height: 1.5;
+  overflow: hidden;
+}
+footer a {
+  display: block;
+  color: #1e1e1e;
+  text-decoration: none;
+}
+footer a:hover {
+  border-bottom: 1px solid #4f1f4a;
+  color: black;
+  transition: all 0.3s ease;
+}
+.kontakti-footer h1,
+.social-media h1,
+.nav-footer h1 {
+  text-transform: uppercase;
+}
+.social-media,
+.nav-footer,
+.kontakti-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.social-media {
+  align-items: center;
+}
+.social-media ion-icon {
+  font-size: 1.5em;
+}
+.kontakti-footer ion-icon {
+  font-size: 1.1em;
+}

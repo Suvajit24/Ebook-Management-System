@@ -1,0 +1,76 @@
+@media (max-width: 1300px) {
+  .book-image img {
+    width: 23vw;
+    top: 45%;
+    left: 50%;
+  }
+  .book-image::before,
+  .book-image::after {
+    padding-bottom: 50vh;
+    top: 45%;
+    left: 50%;
+  }
+  .book-image::after {
+    width: 56%;
+    padding-bottom: 55%;
+  }
+  .book-image::before {
+    width: 65%;
+    padding-bottom: 65%;
+  }
+  .book-info p {
+    width: 80%;
+  }
+  .book-info h1 {
+    font-size: 2rem;
+    margin-bottom: 0.8em;
+  }
+  .whats-inside-lists h1 {
+    font-size: 2.2rem;
+  }
+  .num {
+    font-size: 3rem;
+  }
+  .chapter-1 h1 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 5fr;
+    row-gap: 4em;
+  }
+  .book-image {
+    grid-row: 2/-2;
+  }
+  .book-image img {
+    width: 32vw;
+    top: 50%;
+    left: 50%;
+  }
+  .book-image::before,
+  .book-image::after {
+    padding-bottom: 50vh;
+    top: 50%;
+    left: 50%;
+  }
+  .book-image::after {
+    width: 40%;
+    padding-bottom: 40%;
+  }
+  .book-image::before {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+  .book-info {
+    margin-top: 3em;
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+  }
+  .book-info p {
+    width: 100%;
+  }
+}
+/*deri 900px*/
